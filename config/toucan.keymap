@@ -135,9 +135,9 @@
             display-name = "GAME";
             // Above MOU so trackpad contact does not replace the gaming thumbs.
             bindings = <
-                &kp TAB      &kp Q &kp W &kp E &kp R &kp T   &trans &trans &trans    &trans &trans &trans
-                &mt LCTRL ESC &kp A &kp S &kp D &kp F &kp G   &trans &trans &mkp LCLK &trans &trans &trans
-                &kp LSHFT    &kp Z &kp X &kp C &kp V &kp B   &trans &trans &trans    &trans &trans &tog 5
+                &kp TAB      &kp Q &kp X &kp E &kp R &kp T   &trans &trans &trans    &trans &trans &trans
+                &mt LCTRL ESC &kp A &kp W &kp D &kp F &kp G   &trans &trans &mkp LCLK &trans &trans &trans
+                &kp LSHFT    &kp Z &kp S &kp C &kp V &kp B   &trans &trans &trans    &trans &trans &tog 5
                                      &kp BSPC &none &kp SPACE   &mkp RCLK &none &kp RET
             >;
         };
