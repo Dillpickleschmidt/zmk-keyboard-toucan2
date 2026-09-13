@@ -160,12 +160,13 @@ GAME uses QWERTY-based left-hand letters without home row mods. The W/S/X column
 is rotated down one position, then the letters shift right one column.
 
 ```text
-Tab       none  Q  X  E  R
-Esc/Ctrl  none  A  W  D  F
-Shift     none  Z  S  C  V
+Tab       none   Q  X  E  R
+Esc/Ctrl  Shift  A  W  D  F
+Shift     none   Z  S  C  V
 ```
 
-The second column is inactive through `&none`. T, G, and B are unmapped in GAME.
+The second column has a dedicated Left Shift key in the middle, `&kp LSHFT`.
+Its top and bottom keys are inactive through `&none`. T, G, and B are unmapped in GAME.
 The outer left column and thumb row retain their previous bindings.
 The physical QWERTY J and L positions send plain J and L, with left-click
 between them at the K position. The other right-hand letter and punctuation keys

@@ -81,7 +81,7 @@ half with the new `toucan2_graphite_left.uf2`. Do not use the settings-reset fil
 
 1. Press the bottom-right key to toggle GAME on.
 2. Check that the display shows GAME.
-3. Check that the second left-hand column is inactive and the remaining letter rows are `Q X E R`, `A W D F`, and `Z S C V`.
+3. Test Left Shift at the middle key of the second left-hand column, with the top and bottom keys inactive.
 4. Tap the far-left middle key to test Escape.
 5. Touch the trackpad and press the left Space thumb to test Space.
 6. Test J and L at their physical QWERTY positions, with left-click at K between them.
