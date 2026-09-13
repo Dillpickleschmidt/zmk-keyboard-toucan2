@@ -94,6 +94,11 @@ The vendor matrix, physical layout, I2C pins, reset and ready pins, Azoteq TPS43
 driver, display, power settings, and dependency manifest are retained. There is
 no Cirque driver. Both halves keep the vendor's 2048-byte input thread stack.
 
+The complete display implementation matches the latest vendor main checked on
+September 13, 2026. `CONFIG_TOUCAN_STATUS_SCREEN=2` selects its current default
+design. This follows the latest Toucan2 source, not an attempt to reproduce an
+unknown factory firmware version.
+
 NAV and SYM are unchanged. ADJ fixes two vendor binding typos: `&mo TAB`
 becomes `&kp TAB`, and `&bt LSHFT` becomes `&kp LSHFT`. The numeric layer
 reference replaces `&mo NAV` for editor compatibility. MOU at index 4 is
@@ -138,6 +143,18 @@ because the vendor's internal shields still use `toucan_left` and `toucan_right`
 
 ## Verification status
 
-The corrected Toucan2 firmware must pass compilation and the hardware tests in
-[the installation guide](setup.md). A successful build alone cannot confirm
-trackpad operation, direction, gesture shortcuts, or home row timing.
+Firmware commit `bf7e758` passed the
+[Toucan2 build](https://github.com/Dillpickleschmidt/zmk-keyboard-toucan2/actions/runs/34781919629)
+on September 13, 2026. Both halves and the settings-reset target compiled.
+The logs confirm `CONFIG_INPUT_TPS43=y` and `azoteq,tps43` on the right, plus
+Studio, smooth scrolling, and status screen 2 on the left.
+
+Static checks confirmed 42 bindings in each of the five active layers, unchanged
+Graphite bindings, stock NAV/SYM/MOU bindings, and unchanged vendor matrix,
+geometry, dependencies, display source, right-half config, and build workflow.
+Nick's hosted editor loaded all layers and the Graphite layout without a layout
+warning through Clipboard import.
+
+This corrected build has not yet been flashed. A successful build alone cannot
+confirm trackpad operation, direction, gesture shortcuts, or home row timing.
+Those require the hardware tests in [the installation guide](setup.md).
