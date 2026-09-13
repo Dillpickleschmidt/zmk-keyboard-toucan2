@@ -177,12 +177,15 @@ inherit BASE, including their existing home row mods.
 | Physical QWERTY J, BASE H / Right Shift | J, without a home row mod |
 | Physical QWERTY K, BASE A / Right Ctrl | Left-click, `&mkp LCLK` |
 | Physical QWERTY L, BASE E / Right Alt | L, without a home row mod |
-| Left outer thumb | Backspace |
-| Left middle thumb | Inactive |
-| Left inner thumb, normally Space | Right-click, `&mkp RCLK` |
-| Right inner thumb | Space |
-| Right middle thumb | Inactive |
-| Right outer thumb | Enter |
+| Left thumb, normally Backspace | Backspace |
+| Left thumb, normally NAV | Inactive |
+| Left outer thumb, normally Space | Right-click, `&mkp RCLK` |
+| Right outer thumb, normally Space | Space |
+| Right thumb, normally SYM | Inactive |
+| Right thumb, normally Enter | Enter |
+
+Here, outer thumbs means the two Space-position keys that extend furthest out
+from the keyboard, as described by the user.
 
 The [mouse-button behaviors](https://zmk.dev/docs/keymaps/behaviors/mouse-emulation#mouse-button-press)
 hold their button down until the key is released. They work without trackpad
