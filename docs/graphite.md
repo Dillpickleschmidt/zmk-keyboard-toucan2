@@ -134,8 +134,14 @@ The following requested settings differ from the vendor main branch:
   Super+Tab, Super+Right, Super+D, and Super+Left for north, east, south, and west.
   Hyprland determines what those shortcuts do. No custom gesture logic is added.
 
-Pointer scaling remains 100/100 and scroll scaling remains 1/20, both Toucan2
-vendor values. The driver retains the vendor's tap, two-finger scroll, zoom,
+Pointer scaling remains at the vendor's 100/100. Both scroll scalers use 4/5
+instead of the vendor's 1/20, increasing scroll output by 16 times. This is a
+user-approved starting point to compensate for ZMK's maximum 16-times HID
+resolution multiplier, not a Beekeeb preset. Host negotiation and application
+support still affect perceived speed. Only the left half needs reflashing for
+this scaler change because it enables the trackpad listener.
+
+The driver retains the vendor's tap, two-finger scroll, zoom,
 three-finger swipe, filtering, and power-management options. Hardware tests
 must confirm the desired direction and usable speed after flashing.
 
@@ -168,6 +174,8 @@ geometry, dependencies, display source, right-half config, and build workflow.
 Nick's hosted editor loaded all layers and the Graphite layout without a layout
 warning through Clipboard import.
 
-This corrected build has not yet been flashed. A successful build alone cannot
-confirm trackpad operation, direction, gesture shortcuts, or home row timing.
-Those require the hardware tests in [the installation guide](setup.md).
+Both halves were flashed with `b31c055`. The user confirmed working pointer
+movement and scrolling, but reported very slow scrolling with the 1/20 scaler.
+The subsequent 4/5 adjustment still requires a hardware speed test. Gesture
+shortcuts and home row timing also require the checks in
+[the installation guide](setup.md).
