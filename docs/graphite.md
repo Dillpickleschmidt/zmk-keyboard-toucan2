@@ -156,11 +156,19 @@ The bottom-right key toggles GAME at index 5 with ZMK's standard
 The same key toggles it off. Escape remains on the far-left middle key,
 with Left Ctrl on hold.
 
-GAME uses QWERTY-based left-hand letters without home row mods, with the W/S/X
-column rotated down one position. The rows are `Q X E R T`, `A W D F G`, and
-`Z S C V B`. The former W key sends X, S sends W, and X sends S.
-The other right-hand letter and
-punctuation keys inherit BASE, including their existing home row mods.
+GAME uses QWERTY-based left-hand letters without home row mods. The W/S/X column
+is rotated down one position, then the letters shift right one column.
+
+```text
+Tab       none  Q  X  E  R
+Esc/Ctrl  none  A  W  D  F
+Shift     none  Z  S  C  V
+```
+
+The second column is inactive through `&none`. T, G, and B are unmapped in GAME.
+The outer left column and thumb row retain their previous bindings.
+The other right-hand letter and punctuation keys inherit BASE, including their
+existing home row mods.
 
 | Position | GAME binding |
 | --- | --- |
