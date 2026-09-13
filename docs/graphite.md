@@ -156,13 +156,13 @@ The bottom-right key toggles GAME at index 5 with ZMK's standard
 The same key toggles it off. Escape remains on the far-left middle key,
 with Left Ctrl on hold.
 
-GAME uses QWERTY-based left-hand letters without home row mods. The W/S/X column
-is rotated down one position, then the letters shift right one column.
+GAME uses QWERTY-based left-hand letters without home row mods, shifted right
+one column. W, S, and X retain their normal top, middle, and bottom rows.
 
 ```text
-Tab       none   Q  X  E  R
-Esc/Ctrl  Shift  A  W  D  F
-Shift     none   Z  S  C  V
+Tab       none   Q  W  E  R
+Esc/Ctrl  Shift  A  S  D  F
+Shift     none   Z  X  C  V
 ```
 
 The second column has a dedicated Left Shift key in the middle, `&kp LSHFT`.
