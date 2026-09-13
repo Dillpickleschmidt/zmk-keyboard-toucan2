@@ -37,34 +37,34 @@
         // Original Graphite Shift pairs, triggered by either Shift key.
         // https://github.com/rdavison/graphite-layout#ascii-version
         // https://zmk.dev/docs/keymaps/behaviors/mod-morph
-        graphite_quote: graphite_quote {
+        quote_pair: quote_pair {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            display-name = "Graphite apostrophe / underscore";
+            display-name = "apostrophe / underscore";
             bindings = <&kp SQT>, <&kp UNDER>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        graphite_comma: graphite_comma {
+        comma_pair: comma_pair {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            display-name = "Graphite comma / question mark";
+            display-name = "comma / question mark";
             bindings = <&kp COMMA>, <&kp QMARK>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        graphite_minus: graphite_minus {
+        minus_pair: minus_pair {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            display-name = "Graphite minus / double quote";
+            display-name = "minus / double quote";
             bindings = <&kp MINUS>, <&kp DQT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        graphite_slash: graphite_slash {
+        slash_pair: slash_pair {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            display-name = "Graphite slash / less than";
+            display-name = "slash / less than";
             bindings = <&kp FSLH>, <&kp LT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -82,11 +82,11 @@
         compatible = "zmk,keymap";
 
         base {
-            display-name = "Graphite";
+            display-name = "BASE";
             bindings = <
-                &kp TAB   &kp B       &kp L       &kp D        &kp W        &kp Z   &graphite_quote &kp F        &kp O        &kp U       &kp J           &kp SEMI
-                &mt LCTRL ESC &hml LGUI N &hml LALT R &hml LCTRL T &hml LSHFT S &kp G   &kp Y           &hmr RSHFT H &hmr RCTRL A &hmr RALT E &hmr RGUI I     &graphite_comma
-                &kp LSHFT &kp Q       &kp X       &kp M        &kp C        &kp V   &kp K           &kp P        &kp DOT      &graphite_minus &graphite_slash &kp ESC
+                &kp TAB   &kp B       &kp L       &kp D        &kp W        &kp Z   &quote_pair &kp F        &kp O        &kp U       &kp J           &kp SEMI
+                &mt LCTRL ESC &hml LGUI N &hml LALT R &hml LCTRL T &hml LSHFT S &kp G   &kp Y           &hmr RSHFT H &hmr RCTRL A &hmr RALT E &hmr RGUI I     &comma_pair
+                &kp LSHFT &kp Q       &kp X       &kp M        &kp C        &kp V   &kp K           &kp P        &kp DOT      &minus_pair &slash_pair &kp ESC
                                                 &kp BSPC     &mo 1        &kp SPACE   &kp SPACE &mo 2 &kp RET
             >;
         };

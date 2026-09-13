@@ -5,6 +5,10 @@ This configuration starts from Beekeeb's official Toucan2 main commit
 
 ## Base layer
 
+The display name is the vendor's `BASE`. Punctuation behaviors use neutral
+symbol-pair names. The layout name appears only in source documentation, not
+in the keyboard's layer or behavior labels.
+
 The letter and punctuation positions follow the
 [original Graphite ASCII layout](https://github.com/rdavison/graphite-layout#ascii-version).
 The Toucan has no number row. Numbers remain on NAV, and the additional symbols

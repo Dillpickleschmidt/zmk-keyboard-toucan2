@@ -9,8 +9,8 @@ trackpad. The earlier `zmk-keyboard-toucan` fork targets different hardware.
 2. Select GitHub and sign in.
 3. Grant access to `Dillpickleschmidt/zmk-keyboard-toucan2`.
 4. Select that repository, branch `main`, and `config/toucan.keymap`.
-5. Inspect Graphite, NAV, SYM, ADJ, and MOU.
-6. Inspect `hml`, `hmr`, and the four `graphite_*` entries in Behaviors.
+5. Inspect BASE, NAV, SYM, ADJ, and MOU.
+6. Inspect `hml`, `hmr`, `quote_pair`, `comma_pair`, `minus_pair`, and `slash_pair` in Behaviors.
 
 For a local preview, use FileSystem and select this repository's `config`
 directory in a Chromium browser. For Clipboard import, choose Custom, import
