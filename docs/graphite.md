@@ -11,18 +11,26 @@ The Toucan has no number row. Numbers remain on NAV, and the additional symbols
 remain on SYM.
 
 ```text
-Tab    B  L  D  W  Z       '  F  O  U  J  ;
-Ctrl   N  R  T  S  G       Y  H  A  E  I  ,
-Shift  Q  X  M  C  V       K  P  .  -  /  Esc
-          Super NAV Space   Enter SYM Backspace
+Tab       B  L  D  W  Z       '  F  O  U  J  ;
+Esc/Ctrl  N  R  T  S  G       Y  H  A  E  I  ,
+Shift     Q  X  M  C  V       K  P  .  -  /  Esc
+          Backspace NAV Space   Space SYM Enter
 ```
 
 The punctuation occupies the original Graphite columns, including apostrophe on
 the inner right index column and semicolon on the outer right pinky column.
-Backspace moves from the top right corner to the outer right thumb key to make
-room. That thumb key still provides the vendor's Right Alt on NAV, SYM, and ADJ.
-Space, Enter, both layer keys, and the dedicated left modifiers retain their
-stock base positions.
+Backspace is on the outer left thumb. The right thumbs are Space, SYM, and Enter
+from left to right. Both layer keys and the left inner Space retain their positions.
+These thumb changes apply to the base layer only. NAV, SYM, and ADJ keep their
+existing thumb bindings, including outer left Super and outer right Alt. MOU
+keeps its six thumb mouse buttons.
+
+The far-left middle key uses ZMK's standard
+[mod-tap](https://zmk.dev/docs/keymaps/behaviors/hold-tap#mod-tap), `&mt LCTRL ESC`.
+A tap released before 200 ms sends Escape. Holding for 200 ms, or pressing
+another key while it is down, activates Left Ctrl. No custom timing or
+opposite-hand restriction is added to this key. Its SYM and ADJ bindings remain
+dedicated Ctrl, and NAV retains Bluetooth clear. MOU inherits the base behavior.
 
 ## Home row mods
 
@@ -146,6 +154,7 @@ because the vendor's internal shields still use `toucan_left` and `toucan_right`
 Firmware commit `bf7e758` passed the
 [Toucan2 build](https://github.com/Dillpickleschmidt/zmk-keyboard-toucan2/actions/runs/34781919629)
 on September 13, 2026. Both halves and the settings-reset target compiled.
+That build predates the Escape/Ctrl and thumb changes described above.
 The logs confirm `CONFIG_INPUT_TPS43=y` and `azoteq,tps43` on the right, plus
 Studio, smooth scrolling, and status screen 2 on the left.
 

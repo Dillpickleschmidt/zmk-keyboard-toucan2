@@ -85,9 +85,9 @@
             display-name = "Graphite";
             bindings = <
                 &kp TAB   &kp B       &kp L       &kp D        &kp W        &kp Z   &graphite_quote &kp F        &kp O        &kp U       &kp J           &kp SEMI
-                &kp LCTRL &hml LGUI N &hml LALT R &hml LCTRL T &hml LSHFT S &kp G   &kp Y           &hmr RSHFT H &hmr RCTRL A &hmr RALT E &hmr RGUI I     &graphite_comma
+                &mt LCTRL ESC &hml LGUI N &hml LALT R &hml LCTRL T &hml LSHFT S &kp G   &kp Y           &hmr RSHFT H &hmr RCTRL A &hmr RALT E &hmr RGUI I     &graphite_comma
                 &kp LSHFT &kp Q       &kp X       &kp M        &kp C        &kp V   &kp K           &kp P        &kp DOT      &graphite_minus &graphite_slash &kp ESC
-                                                &kp LGUI     &mo 1        &kp SPACE   &kp RET &mo 2 &kp BSPC
+                                                &kp BSPC     &mo 1        &kp SPACE   &kp SPACE &mo 2 &kp RET
             >;
         };
 
