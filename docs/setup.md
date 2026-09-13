@@ -9,7 +9,7 @@ trackpad. The earlier `zmk-keyboard-toucan` fork targets different hardware.
 2. Select GitHub and sign in.
 3. Grant access to `Dillpickleschmidt/zmk-keyboard-toucan2`.
 4. Select that repository, branch `main`, and `config/toucan.keymap`.
-5. Inspect BASE, NAV, SYM, ADJ, and MOU.
+5. Inspect BASE, NAV, SYM, ADJ, MOU, and GAME.
 6. Inspect `hml`, `hmr`, `quote_pair`, `comma_pair`, `minus_pair`, and `slash_pair` in Behaviors.
 
 For a local preview, use FileSystem and select this repository's `config`
@@ -73,3 +73,22 @@ this repository. Bluetooth hosts may need re-pairing after HID descriptor change
 Three-finger swipes send the vendor's Windows-mode shortcuts. Their effects on
 Hyprland depend on your existing bindings. No Hyprland settings are changed here.
 Scroll direction and smoothness still require a physical test on each host.
+
+## Install and test the gaming update
+
+If both halves already run the corrected Toucan2 firmware, flash only the left
+half with the new `toucan2_graphite_left.uf2`. Do not use the settings-reset file.
+
+1. Press the bottom-right key to toggle GAME on.
+2. Check that the display shows GAME.
+3. Test the left-hand QWERTY letters, including holding W without activating a modifier.
+4. Tap the far-left middle key to test Escape.
+5. Touch the trackpad and press the left Space thumb to test Space.
+6. Press the physical QWERTY K-position key to test left-click.
+7. Hold that key while moving the pointer to test dragging.
+8. Press the right Space thumb to test right-click.
+9. Touch the trackpad and check that both middle thumbs do nothing.
+10. Press the bottom-right key again to return to BASE.
+11. Check that the normal layout, NAV, SYM, and touch-activated thumb mouse buttons return.
+
+The [gaming reference](graphite.md#gaming-layer) lists the bindings and layer behavior.

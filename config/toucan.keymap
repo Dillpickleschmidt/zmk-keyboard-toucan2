@@ -86,7 +86,7 @@
             bindings = <
                 &kp TAB   &kp B       &kp L       &kp D        &kp W        &kp Z   &quote_pair &kp F        &kp O        &kp U       &kp J           &kp SEMI
                 &mt LCTRL ESC &hml LGUI N &hml LALT R &hml LCTRL T &hml LSHFT S &kp G   &kp Y           &hmr RSHFT H &hmr RCTRL A &hmr RALT E &hmr RGUI I     &comma_pair
-                &kp LSHFT &kp Q       &kp X       &kp M        &kp C        &kp V   &kp K           &kp P        &kp DOT      &minus_pair &slash_pair &kp ESC
+                &kp LSHFT &kp Q       &kp X       &kp M        &kp C        &kp V   &kp K           &kp P        &kp DOT      &minus_pair &slash_pair &tog 5
                                                 &kp BSPC     &mo 1        &kp SPACE   &kp SPACE &mo 2 &kp RET
             >;
         };
@@ -131,8 +131,15 @@
             >;
         };
 
-        extra_2 {
-                status = "reserved";
+        game {
+            display-name = "GAME";
+            // Above MOU so trackpad contact does not replace the gaming thumbs.
+            bindings = <
+                &kp TAB      &kp Q &kp W &kp E &kp R &kp T   &trans &trans &trans    &trans &trans &trans
+                &mt LCTRL ESC &kp A &kp S &kp D &kp F &kp G   &trans &trans &mkp LCLK &trans &trans &trans
+                &kp LSHFT    &kp Z &kp X &kp C &kp V &kp B   &trans &trans &trans    &trans &trans &tog 5
+                                     &kp BSPC &none &kp SPACE   &mkp RCLK &none &kp RET
+            >;
         };
 
         extra_3 {

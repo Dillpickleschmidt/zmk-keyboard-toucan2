@@ -17,7 +17,7 @@ remain on SYM.
 ```text
 Tab       B  L  D  W  Z       '  F  O  U  J  ;
 Esc/Ctrl  N  R  T  S  G       Y  H  A  E  I  ,
-Shift     Q  X  M  C  V       K  P  .  -  /  Esc
+Shift     Q  X  M  C  V       K  P  .  -  /  GAME
           Backspace NAV Space   Space SYM Enter
 ```
 
@@ -115,8 +115,8 @@ NAV and SYM are unchanged. ADJ fixes two vendor binding typos: `&mo TAB`
 becomes `&kp TAB`, and `&bt LSHFT` becomes `&kp LSHFT`. The numeric layer
 reference replaces `&mo NAV` for editor compatibility. MOU at index 4 is
 unchanged, including all six thumb mouse buttons. Finger contact activates MOU;
-its transparent letter positions inherit Graphite and home row mods. Layers 5
-and 6 remain reserved. NAV still overrides the left home row with Bluetooth
+its transparent letter positions inherit Graphite and home row mods. GAME uses
+index 5, and index 6 remains reserved. NAV still overrides the left home row with Bluetooth
 controls, so home row mods are unavailable at those positions on NAV.
 
 The following requested settings differ from the vendor main branch:
@@ -149,6 +149,41 @@ must confirm the desired direction and usable speed after flashing.
 preserving all vendor coordinates. Build artifact names explicitly say Toucan2
 because the vendor's internal shields still use `toucan_left` and `toucan_right`.
 
+## Gaming layer
+
+The bottom-right key toggles GAME at index 5 with ZMK's standard
+[`&tog` behavior](https://zmk.dev/docs/keymaps/behaviors/layers#toggle-layer).
+The same key toggles it off. Escape remains on the far-left middle key,
+with Left Ctrl on hold.
+
+GAME changes the left-hand letters to plain QWERTY without home row mods:
+`Q W E R T`, `A S D F G`, and `Z X C V B`. The other right-hand letter and
+punctuation keys inherit BASE, including their existing home row mods.
+
+| Position | GAME binding |
+| --- | --- |
+| Physical QWERTY K, BASE A / Right Ctrl | Left-click, `&mkp LCLK` |
+| Left outer thumb | Backspace |
+| Left middle thumb | Inactive |
+| Left inner thumb | Space |
+| Right inner thumb, normally Space | Right-click, `&mkp RCLK` |
+| Right middle thumb | Inactive |
+| Right outer thumb | Enter |
+
+The [mouse-button behaviors](https://zmk.dev/docs/keymaps/behaviors/mouse-emulation#mouse-button-press)
+hold their button down until the key is released. They work without trackpad
+contact. GAME sits above MOU, so touching the trackpad does not replace the
+gaming thumb bindings. The pointer, gestures, scroll speed, and display design
+are unchanged. The existing display shows the active layer name, `GAME`.
+
+The two middle thumbs use `&none` in GAME. NAV, SYM, and ADJ remain available
+after toggling back to BASE. GAME adds no supporting layers or custom behaviors.
+The original layers at indices 0 through 4 keep their order and bindings,
+apart from the BASE toggle key. Hold-to-scroll remains unchanged outside GAME.
+
+Only the left half needs this update. The right-half hardware configuration
+is unchanged. Gaming controls still require a physical test after flashing.
+
 ## Sources
 
 - [Official Toucan2 firmware guide](https://docs.beekeeb.com/toucan2-keyboard/convert-toucan-to-toucan2#flashing-the-toucan2-firmware)
@@ -176,6 +211,7 @@ warning through Clipboard import.
 
 Both halves were flashed with `b31c055`. The user confirmed working pointer
 movement and scrolling, but reported very slow scrolling with the 1/20 scaler.
-The subsequent 4/5 adjustment still requires a hardware speed test. Gesture
-shortcuts and home row timing also require the checks in
+The left half was subsequently flashed with `6fc9033`, and the user confirmed
+that the 4/5 scroll speed feels right. Gesture shortcuts and home row timing
+still require the checks in
 [the installation guide](setup.md).
