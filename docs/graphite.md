@@ -179,8 +179,8 @@ inherit BASE, including their existing home row mods.
 | Physical QWERTY L, BASE E / Right Alt | L, without a home row mod |
 | Left outer thumb | Backspace |
 | Left middle thumb | Inactive |
-| Left inner thumb | Space |
-| Right inner thumb, normally Space | Right-click, `&mkp RCLK` |
+| Left inner thumb, normally Space | Right-click, `&mkp RCLK` |
+| Right inner thumb | Space |
 | Right middle thumb | Inactive |
 | Right outer thumb | Enter |
 

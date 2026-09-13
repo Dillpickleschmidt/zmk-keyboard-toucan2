@@ -138,7 +138,7 @@
                 &kp TAB      &none &kp Q &kp W &kp E &kp R   &trans &trans &trans    &trans &trans &trans
                 &mt LCTRL ESC &kp LSHFT &kp A &kp S &kp D &kp F   &trans &kp J  &mkp LCLK &kp L  &trans &trans
                 &kp LSHFT    &none &kp Z &kp X &kp C &kp V   &trans &trans &trans    &trans &trans &tog 5
-                                     &kp BSPC &none &kp SPACE   &mkp RCLK &none &kp RET
+                                     &kp BSPC &none &mkp RCLK   &kp SPACE &none &kp RET
             >;
         };
 
