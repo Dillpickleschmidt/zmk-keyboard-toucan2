@@ -167,12 +167,15 @@ Shift     none  Z  S  C  V
 
 The second column is inactive through `&none`. T, G, and B are unmapped in GAME.
 The outer left column and thumb row retain their previous bindings.
-The other right-hand letter and punctuation keys inherit BASE, including their
-existing home row mods.
+The physical QWERTY J and L positions send plain J and L, with left-click
+between them at the K position. The other right-hand letter and punctuation keys
+inherit BASE, including their existing home row mods.
 
 | Position | GAME binding |
 | --- | --- |
+| Physical QWERTY J, BASE H / Right Shift | J, without a home row mod |
 | Physical QWERTY K, BASE A / Right Ctrl | Left-click, `&mkp LCLK` |
+| Physical QWERTY L, BASE E / Right Alt | L, without a home row mod |
 | Left outer thumb | Backspace |
 | Left middle thumb | Inactive |
 | Left inner thumb | Space |

@@ -136,7 +136,7 @@
             // Above MOU so trackpad contact does not replace the gaming thumbs.
             bindings = <
                 &kp TAB      &none &kp Q &kp X &kp E &kp R   &trans &trans &trans    &trans &trans &trans
-                &mt LCTRL ESC &none &kp A &kp W &kp D &kp F   &trans &trans &mkp LCLK &trans &trans &trans
+                &mt LCTRL ESC &none &kp A &kp W &kp D &kp F   &trans &kp J  &mkp LCLK &kp L  &trans &trans
                 &kp LSHFT    &none &kp Z &kp S &kp C &kp V   &trans &trans &trans    &trans &trans &tog 5
                                      &kp BSPC &none &kp SPACE   &mkp RCLK &none &kp RET
             >;

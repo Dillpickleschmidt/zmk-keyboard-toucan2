@@ -84,7 +84,7 @@ half with the new `toucan2_graphite_left.uf2`. Do not use the settings-reset fil
 3. Check that the second left-hand column is inactive and the remaining letter rows are `Q X E R`, `A W D F`, and `Z S C V`.
 4. Tap the far-left middle key to test Escape.
 5. Touch the trackpad and press the left Space thumb to test Space.
-6. Press the physical QWERTY K-position key to test left-click.
+6. Test J and L at their physical QWERTY positions, with left-click at K between them.
 7. Hold that key while moving the pointer to test dragging.
 8. Press the right Space thumb to test right-click.
 9. Touch the trackpad and check that both middle thumbs do nothing.
