@@ -167,7 +167,7 @@ Shift     none   Z  X  C  V
 
 The second column has a dedicated Left Shift key in the middle, `&kp LSHFT`.
 Its top and bottom keys are inactive through `&none`. T, G, and B are unmapped in GAME.
-The outer left column and thumb row retain their previous bindings.
+The outer left column retains its previous bindings.
 The physical QWERTY J and L positions send plain J and L, with left-click
 between them at the K position. The other right-hand letter and punctuation keys
 inherit BASE, including their existing home row mods.
@@ -181,7 +181,7 @@ inherit BASE, including their existing home row mods.
 | Left thumb, normally NAV | Inactive |
 | Left outer thumb, normally Space | Space |
 | Right outer thumb, normally Space | Right-click, `&mkp RCLK` |
-| Right thumb, normally SYM | Inactive |
+| Right thumb, normally SYM | Right Shift, `&kp RSHFT` |
 | Right thumb, normally Enter | Enter |
 
 Here, outer thumbs means the two Space-position keys that extend furthest out
@@ -193,7 +193,8 @@ contact. GAME sits above MOU, so touching the trackpad does not replace the
 gaming thumb bindings. The pointer, gestures, scroll speed, and display design
 are unchanged. The existing display shows the active layer name, `GAME`.
 
-The two middle thumbs use `&none` in GAME. NAV, SYM, and ADJ remain available
+The left middle thumb uses `&none` in GAME. The right middle thumb sends Right
+Shift while held. NAV, SYM, and ADJ remain available
 after toggling back to BASE. GAME adds no supporting layers or custom behaviors.
 The original layers at indices 0 through 4 keep their order and bindings,
 apart from the BASE toggle key. Hold-to-scroll remains unchanged outside GAME.
