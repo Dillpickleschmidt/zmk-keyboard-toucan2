@@ -167,9 +167,10 @@ Shift     none   Z  X  C  V
 
 The second column has a dedicated Left Shift key in the middle, `&kp LSHFT`.
 Its top and bottom keys are inactive through `&none`. T, G, and B are unmapped in GAME.
-The outer left column retains its previous bindings.
+The outer left column and thumb row retain their previous bindings.
 The physical QWERTY J and L positions send plain J and L, with left-click
-between them at the K position. The other right-hand letter and punctuation keys
+between them at the K position. The right pinky home-row key, normally I with
+Right Super on hold, sends dedicated Right Shift. The other right-hand letter and punctuation keys
 inherit BASE, including their existing home row mods.
 
 | Position | GAME binding |
@@ -177,11 +178,12 @@ inherit BASE, including their existing home row mods.
 | Physical QWERTY J, BASE H / Right Shift | J, without a home row mod |
 | Physical QWERTY K, BASE A / Right Ctrl | Left-click, `&mkp LCLK` |
 | Physical QWERTY L, BASE E / Right Alt | L, without a home row mod |
+| Right pinky home row, BASE I / Right Super | Right Shift, `&kp RSHFT` |
 | Left thumb, normally Backspace | Backspace |
 | Left thumb, normally NAV | Inactive |
 | Left outer thumb, normally Space | Space |
 | Right outer thumb, normally Space | Right-click, `&mkp RCLK` |
-| Right thumb, normally SYM | Right Shift, `&kp RSHFT` |
+| Right thumb, normally SYM | Inactive |
 | Right thumb, normally Enter | Enter |
 
 Here, outer thumbs means the two Space-position keys that extend furthest out
@@ -193,8 +195,7 @@ contact. GAME sits above MOU, so touching the trackpad does not replace the
 gaming thumb bindings. The pointer, gestures, scroll speed, and display design
 are unchanged. The existing display shows the active layer name, `GAME`.
 
-The left middle thumb uses `&none` in GAME. The right middle thumb sends Right
-Shift while held. NAV, SYM, and ADJ remain available
+The two middle thumbs use `&none` in GAME. NAV, SYM, and ADJ remain available
 after toggling back to BASE. GAME adds no supporting layers or custom behaviors.
 The original layers at indices 0 through 4 keep their order and bindings,
 apart from the BASE toggle key. Hold-to-scroll remains unchanged outside GAME.
