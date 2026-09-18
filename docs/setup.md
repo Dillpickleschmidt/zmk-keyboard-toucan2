@@ -83,10 +83,10 @@ half with the new `toucan2_graphite_left.uf2`. Do not use the settings-reset fil
 2. Check that the display shows GAME.
 3. Test Left Shift at the middle key of the second left-hand column, with the top and bottom keys inactive.
 4. Tap the far-left middle key to test Escape.
-5. Touch the trackpad and press the left outer thumb, normally Space, to test Space.
+5. Touch the trackpad and press the left outer thumb, normally Space, to test right-click.
 6. Test J and L at their physical QWERTY positions, with left-click at K between them.
 7. Hold that key while moving the pointer to test dragging.
-8. Press the right outer thumb, normally Space, to test right-click.
+8. Press the right outer thumb, normally Space, to test Space.
 9. Touch the trackpad and check that both middle thumbs do nothing.
 10. Press the bottom-right key again to return to BASE.
 11. Check that the normal layout, NAV, SYM, and touch-activated thumb mouse buttons return.
